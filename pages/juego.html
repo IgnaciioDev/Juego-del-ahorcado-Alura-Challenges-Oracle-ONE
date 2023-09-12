@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/juego.css" />
+    <title>Juego del Ahorcado</title>
+  </head>
+  <body id="body" class="body">
+    <header>
+      <div class="container-header">
+        <div class="logo">
+          <a href="../index.html"> Juego del Ahorcado</a>
+        </div>
+        <nav class="menu">
+          <a href="https://www.linkedin.com/in/ignacio-castroo/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          </a>
+          <a href="https://github.com/Icastroo" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="container-content">
+        <canvas class="draw" id="draw" width="300" height="450"> </canvas>
+
+        <article class="letters">
+          <p id="letrasCorrectas" class="letrasCorrectas"></p>
+          <p id="letrasIncorrectas" class="letrasIncorrectas"></p>
+        </article>
+
+        <article class="container-buttons">
+          <button class="btn" id="nuevoJuego">Nuevo juego</button>
+          <button href="../index.html" class="btn" id="desistir">
+            Desistir
+          </button>
+        </article>
+        <span class="finJuego" id="alertCorrect">
+          <p>✅</p>
+          <p>Has ganado</p>
+          <p>Felicitaciones!!!</p>
+        </span>
+        <span class="finJuego" id="alertIncorrect">
+          <p>🔴</p>
+          <p>Has perdido</p>
+          <p>Vuelve a intentarlo</p>
+        </span>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;
+        <a href="https://github.com/Icastroo" target="_blank">
+          Icastroo
+        </a>
+        | Challenge Oracle Next Education | 2022
+      </p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e0cf88fc96.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/palabras.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

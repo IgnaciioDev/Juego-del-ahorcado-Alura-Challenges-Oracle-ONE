@@ -1,0 +1,101 @@
+:root {
+    --dark: #181818;
+    --white: #DBD8E3;
+    --secondary: #585F63;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+.container-content {
+    width: 80%;
+    height: 80vh;
+}
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.draw {
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.finJuego {
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 8px;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--dark)
+}
+
+.letters {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.container-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.container-buttons button{
+    width: 100%;
+}
+
+.letrasCorrectas {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    user-select: none;
+}
+.letrasIncorrectas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.letter {
+    border-bottom: 3px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 500px) {
+    .letrasCorrectas {
+        gap: 10px;
+        font-size: 16px;
+    }
+    .letter {
+        border-bottom: 3px solid black;
+        width: 40px;
+        text-align: center;
+    }
+    .container-buttons {
+        width: 100% !important;
+    }
+    .container-buttons button{
+        width: 100%;
+    }
+}
