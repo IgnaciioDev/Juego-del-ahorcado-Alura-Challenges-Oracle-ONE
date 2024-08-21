@@ -30,6 +30,6 @@
 
 ## Author:
 
-- Github - [Icastroo](https://github.com/Icastroo)
-- Linkedin - [Ignacio Sebastian E](https://www.linkedin.com/in/ignacio-castroo/)
+- Github - [IgnaciioDev](https://github.com/Ignaciiodev)
+- Linkedin - [Ignacio Sebastian E](https://www.linkedin.com/in/ignaciodev/)
 
